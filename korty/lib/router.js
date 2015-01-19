@@ -1,5 +1,5 @@
 Router.map(function () {
-    this.route('main', {
+    this.route('home', {
         path: '/home',
     }),
 
