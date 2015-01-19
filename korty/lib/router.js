@@ -1,4 +1,16 @@
 Router.map(function () {
+    this.route('welp', {
+        path: '/',
+    });
+    
+    this.route('login', {
+        path: '/login',
+    });
+    
+    this.route('register', {
+        path: '/registration',
+    });
+    
     this.route('home', {
         path: '/home',
     }),

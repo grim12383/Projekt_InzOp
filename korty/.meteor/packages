@@ -11,3 +11,5 @@ mrt:bootstrap-3
 iron:router
 jquery
 loftsteinn:bootstrap3-daterangepicker
+accounts-ui
+accounts-password
