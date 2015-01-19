@@ -1,0 +1,1 @@
+Korty = new Meteor.Collection('korty');

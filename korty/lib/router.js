@@ -4,5 +4,8 @@ Router.map(function () {
     }),
     this.route('articleForm', {
         path: '/addarticle',
+    }),
+        this.route('reservationForm', {
+        path: '/reservation',
     })
 });

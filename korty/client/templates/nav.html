@@ -18,6 +18,8 @@
                     {{#if isClient}}
                     <li><a href="#">Moje rezerwacje <span class="sr-only"></span></a>
                     </li>
+                    <li><a href="{{pathFor 'reservationForm'}}">Dokonaj rezerwacji<span class="sr-only"></span></a>
+                    </li>
                     {{/if}} {{#if isWorker}}
                     <li><a href="{{ pathFor 'articleForm' }}">Dodaj ogłoszenie<span class="sr-only"></span></a>
                     </li>
