@@ -5,10 +5,10 @@ Template.postItem.helpers({
         else
             return false;
     }
-    
+
 });
 Template.postItem.events({
     'click #del': function () {
-    Articles.remove(this._id);
+            Articles.remove(this._id);
     }
 });
