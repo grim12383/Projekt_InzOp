@@ -12,3 +12,11 @@ Template.nav.helpers({
             return false;
     }
 });
+
+Template.nav.events({
+    'click #logout': function (e) {
+        e.preventDefault();
+        Meteor.logout();
+        Router.go('wilkomen');
+    }
+});

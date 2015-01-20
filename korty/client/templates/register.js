@@ -15,7 +15,11 @@ Template.register.events({
                     typ: 'klient'
                 }
             });
-            console.log('Meteor.userId()');
+            Router.go('login');
         }
+        else{
+            alert('Podane hasła się różnią');
+        }
+        
     }
 });

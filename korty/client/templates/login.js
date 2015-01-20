@@ -7,6 +7,8 @@ Template.login.events = {
         
         if (Meteor.userId() != 0)
             Router.go('home');
+        else
+            alert('Hola!. Zalogój sie.');
     }
 
 }
