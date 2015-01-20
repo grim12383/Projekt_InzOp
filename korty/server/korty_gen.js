@@ -6,7 +6,7 @@ if (Korty.find().count() === 0) {
     });
     Korty.insert({
         nr: 2,
-        typ: 'szutrowy',
+        typ: 'sztuczny',
         stan: 'gotowy'
     });
     Korty.insert({
@@ -16,12 +16,12 @@ if (Korty.find().count() === 0) {
     });
     Korty.insert({
         nr: 4,
-        typ: 'szutrowy',
+        typ: 'sztucznyy',
         stan: 'gotowy'
     });
     Korty.insert({
         nr: 5,
-        typ: 'szutrowy',
+        typ: 'trawiasty',
         stan: 'gotowy'
     });
     Korty.insert({
