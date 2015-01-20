@@ -16,6 +16,7 @@ Template.reservationForm.events({
         var kort = $('#NrKortu').val();
         var data = $('#my-datepicker').val();
         var godzina = $('#time').val();
+        var username=Meteor.user().username;
         var rezerwacja = Rezerwacje.findOne({
             nrkortu: kort,
             data: data,
@@ -31,9 +32,10 @@ Template.reservationForm.events({
             Rezerwacje.insert({
                 nrkortu: kort,
                 data: data,
-                godzina: godzina
+                godzina: godzina,
+                username:username
             });
-            alert("Rezerwacja kortu przebiegła pomyślnie "+kort);
+            alert('Rezerwacja kortu przebiegła pomyślnie: kort : '+kort+' godzina :'+ godzina+ ' data : '+data);
         } else {
 
             alert("Kort " + kort + " jest juz zarezerwowany w dniu " + data + " o godzinie " + godzina + ". Prosimy wybrać inny kort, bądź inne parametry czasowe")

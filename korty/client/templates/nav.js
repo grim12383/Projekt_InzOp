@@ -5,11 +5,17 @@ Template.nav.helpers({
         else
             return false;
     },
-    isClient: function() {
+    isClient: function () {
         if (Meteor.user().profile.typ == "klient")
             return true;
         else
             return false;
+    },
+    login: function () {
+        var id = Meteor.user()._id;
+        return Users.findOne({
+            _id: id
+        });
     }
 });
 

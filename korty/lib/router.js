@@ -19,5 +19,11 @@ Router.map(function () {
     }),
         this.route('reservationForm', {
         path: '/reservation',
+    }),
+    this.route('reservationShow', {
+        path: '/showmyreservations',
+    }),
+          this.route('zarzadzaj', {
+        path: '/zarzadzaj',
     })
 });
